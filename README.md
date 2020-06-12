@@ -1,3 +1,3 @@
 # arena-deploy
 
-aws-cli & jq & curl
+aws-cli & jq & curl for deploying artifacts
