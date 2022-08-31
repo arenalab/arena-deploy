@@ -2,7 +2,7 @@ FROM amazon/aws-cli:latest
 
 RUN yum update -y \
     && yum install -y jq curl git python3 zip tar \
-    && yum clean all
+    && yum clean all && rm -rf /var/cache/yum
 RUN pip3 install boto3
 RUN curl -LO https://dl.k8s.io/release/v1.21.2/bin/linux/amd64/kubectl
 RUN chmod +x ./kubectl
